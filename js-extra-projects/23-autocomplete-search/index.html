@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Autocomplete Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Autocomplete Search</h1>
+
+      <form>
+        <div class="search-field">
+          <span>👀</span>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Food search..."
+            onchange="filterFood(this.value)"
+          />
+        </div>
+        <hr />
+
+        <div id="suggestions">
+          <div class="heading">FOOD OPTIONS</div>
+          <div class="suggestion-list"></div>
+        </div>
+      </form>
+    </main>
+
+    <script defer src="./script.js"></script>
+  </body>
+</html>
